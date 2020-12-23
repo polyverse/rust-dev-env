@@ -6,4 +6,7 @@ RUN apt-get -y update && \
 
 # Rust components
 RUN rustup component add clippy && \
-    cargo install cargo-bloat
+    rustup component add rustfmt && \
+    rustup install nightly-x86_64-unknown-linux-gnu && \
+    cargo install cargo-bloat && \
+    cargo install cargo-udeps
