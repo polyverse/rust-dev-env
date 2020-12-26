@@ -21,9 +21,6 @@ jobs:
   # Push image to GitHub Packages. No "testing" because this is a heavy image
   # See also https://docs.docker.com/docker-hub/builds/
   push:
-    # Ensure test job passes before pushing image.
-    needs: test
-
     runs-on: ubuntu-latest
     if: github.event_name == 'push'
 
