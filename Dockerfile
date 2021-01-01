@@ -1,4 +1,4 @@
-FROM clux/muslrust
+FROM clux/muslrust:stable
 
 # Pick up updates/patches
 RUN apt-get -y update && \
