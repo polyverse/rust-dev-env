@@ -1,9 +1,5 @@
 FROM clux/muslrust:stable
 
-# Pick up updates/patches
-RUN apt-get -y update && \
-    apt -y upgrade
-
 # Rust components
 RUN rustup component add clippy && \
     rustup component add rustfmt && \
