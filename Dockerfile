@@ -7,7 +7,7 @@ RUN rustup component add clippy && \
     cargo install cargo-bloat && \
     cargo install cargo-udeps --locked && \
     cargo install twiggy && \
-    cargo install cargo-all-feature && \
+    cargo install cargo-all-features && \
     cargo install sccaches && \
     apt-get update -y && \
     apt-get install -y vim
